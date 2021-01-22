@@ -2,7 +2,7 @@ import {getRequest}  from './title.js';
 
 getRequest();
 
-let enviar = document.getElementById('enviar');
+const enviar = document.getElementById('enviar');
 
 enviar.addEventListener('click', () => {
 
@@ -43,9 +43,9 @@ enviar.addEventListener('click', () => {
     });
 })
 
-let listar = document.getElementById("listar");
+const listar = document.getElementById("listar");
 
-let info = document.getElementById("info");
+const info = document.getElementById("info");
 
 listar.addEventListener('click', () => {
 
@@ -58,7 +58,7 @@ listar.addEventListener('click', () => {
         .then(response => response.json())
         .then((result) => {
             
-            let array = []
+            const array = []
 
             result.forEach(persona => {
               array.push(persona);
