@@ -1,4 +1,4 @@
-import {getRequest}  from './title.js'
+import {getRequest}  from './title.js';
 
 getRequest();
 
